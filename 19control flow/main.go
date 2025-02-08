@@ -38,4 +38,49 @@ func main() {
 	} else {
 		fmt.Println("age not found in map")
 	}
+
+	//switch case
+
+	var y int
+	fmt.Println("enter y")
+	fmt.Scan(&y)
+
+	switch {
+	case y < 40:
+		fmt.Println("less than 40")
+	case x == 40:
+		fmt.Println("equal to  40")
+	case x > 40:
+		fmt.Println("greater than 40")
+	default:
+		fmt.Println("none")
+	}
+
+	var w int
+	fmt.Println("enter w")
+	fmt.Scan(&w)
+
+	switch w {
+	case 40:
+		fmt.Println("less than 40")
+
+	case 41:
+		fmt.Println("greater than 40")
+	default:
+		fmt.Println("none")
+	}
+
+	switch w {
+	case 40:
+		fmt.Println("40")
+		fallthrough
+	case 41:
+		fmt.Println("fallthrough 41")
+		fallthrough
+	case 42:
+		fmt.Println("fallthrough 42")
+		fallthrough
+	default:
+		fmt.Println("none")
+	}
 }
