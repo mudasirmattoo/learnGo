@@ -22,7 +22,8 @@ func main() {
 	}
 
 	fmt.Println("length is :", length)
-	defer file.Close()
+
+	defer file.Close() //closing the resources after sorrounding function returns
 
 	readFile("./mylcogofile.txt")
 }
