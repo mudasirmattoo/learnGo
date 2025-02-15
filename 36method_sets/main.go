@@ -23,6 +23,9 @@ func main() {
 
 	youngRun(d2) //Chang can run
 
+	fmt.Println("--------------------------")
+
+	useMethodSet()
 }
 
 type dog struct {
